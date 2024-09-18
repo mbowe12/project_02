@@ -1,0 +1,94 @@
+/* layout stuff */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.central-module {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.central-module img {
+    width: 30vw;
+    height: auto;
+    aspect-ratio: square;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .central-module {
+        width: 90vmin;
+        height: 90vmin;
+    }
+}
+/* container for form */
+#name-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* form styling */
+input, button {
+    padding: 30px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+}
+
+input[type="text"] {
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+/* button styling */
+button {
+    color: beige;
+    background-color: cornflowerblue;
+}
+
+button:hover {
+    color: beige;
+    background-color: rgb(50, 40, 87);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+}
+
+/* play pause for audio */
+#pause-button {
+    margin-top: 20px;
+}
